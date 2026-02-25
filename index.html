@@ -10,12 +10,13 @@
      rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <nav class="nav">
             <a href="index.html" class="logo">watchcharm</a>
+            <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
@@ -28,14 +29,14 @@
             <nav class="social-links">
                 <ul class="social-icons">
                     <li class="social-item"><a href="#" aria-label="Facebook"><svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg/icons.svg#icon-facebook"></use>
                     </svg>
                     </a></li>
                     <li class="social-item"><a href="#" aria-label="Instagram"><svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg/icons.svg#icon-instagram"></use>
                     </svg></a></li>
                     <li class="social-item"><a href="#" aria-label="Youtube"><svg class="icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-youtube"></use>
+                        <use href="./images/icons.svg/icons.svg#icon-youtube"></use>
                     </svg></a></li>
                 </ul>
             </nav>
@@ -45,18 +46,23 @@
     <main>
 <section class="hero">
     <div class="hero-container">
+        <div class="hero-top-row">
     <div class="hero-content">
-    <h1 class="hero-title">Welcome to our <span class="hero-collection">collection</span> of premium watches</h1>
+    <h1 class="hero-title">
+        Welcome to our <span class="hero-collection">collection</span> of premium watches
+    </h1>
     <p>Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic designs to
     modern ones, we have a watch to suit every taste and occasion.</p>
     </div>
     <div class="hero-info">
         <ul class="user-icons">
-            <li class="hero-icons"><img src="./images/victoria-romashenko.jpg" alt="Victoria Romashenko" width="60" height="60"/></li>
+            <li class="hero-icons"><img src="./images/victoria-romashenko.jpg" alt="Victoria Romashenko" width="60" height="60" />
+            </li>
             <li class="hero-icons"><img src="./images/john-wax.jpg" alt="John Wax" width="60" height="60"/></li>
-            <li class="hero-icons"><img src="./images/anastasia-trachuk.jpg" alt="Anastasia Trachuk" width="60" height="60"/></li>
+            <li class="hero-icons"><img src="./images/anastasia-trachuk.jpg" alt="Anastasia Trachuk" width="60" height="60" /></li>
         </ul>
         <a href="#catalog" class="scroll-link">Scroll down</a>
+    </div>
     </div>
     <div class="hero-img">
         <img src="./images/hero-image.jpg" alt="hero-image" width="1150" height="500">
@@ -95,35 +101,35 @@
         <a href="#">
         <img src="./images/garmin-marq.jpg" alt="Garmin Marq Athlete" width="292" height="292"/>
         <h3>Garmin Marq Athlete</h3>
-        <p>€450</p>
+        <p class="item-price">€450</p>
         </a>
     </li>
     <li class="catalog-item">
         <a href="">
             <img src="./images/garmin-descent.jpg" alt="Garmin Descent MK1" width="292" height="292"/>
             <h3>Garmin Descent MK1</h3>
-            <p>€680</p>
+            <p class="item-price">€680</p>
             </a>
         </li>
     <li class="catalog-item">
         <a href="">
             <img src="./images/garmin-delta.jpg" alt="Garmin D2 Delta PX" width="292" height="292"/>
             <h3>Garmin D2 Delta PX</h3>
-            <p>€380</p>
+            <p class="item-price">€380</p>
             </a>
         </li>
     <li class="catalog-item">
         <a href="">
             <img src="./images/garmin-fenix-6pro.jpg" alt="Garmin Fenix 6 Pro Solar" width="292" height="292"/>
             <h3>Garmin Fenix 6 Pro Solar</h3>
-            <p>€400</p>
+            <p class="item-price">€400</p>
             </a>
         </li>
     <li class="catalog-item">
         <a href="">
             <img src="./images/garmin-tube-watch.jpg" alt="Tube Watch S42" width="292" height="292"/>
             <h3>Tube Watch S42 Date Steel With Black Case</h3>
-            <p>€395</p>
+            <p class="item-price">€395</p>
             </a>
         </li>
 </ul>
@@ -131,7 +137,7 @@
 </section>
 <section class="advertisement">
     <div class="advertisement-container">
-    <p>Choose <span class="advertisement-span">your story</span>, making every moment unique. Time is your style, and we reveal it.</p>
+    <p >Choose <span class="advertisement-span">your story</span>, making every moment unique. Time is your style, and we reveal it.</p>
     <button type="button" class="advertisement-button">Contact us</button>
     </div>
 </section>
@@ -140,7 +146,7 @@
 <section class="sale">
 <div class="sale-container">
     <h2 class="sale-title">Sale</h2>
-    <div class="sale-gallery">
+    <div class="sale-content-wrapper">
         <ul class="sale-thumbnails">
     <li><img src="./images/garmin-marq-1.jpg" alt="garmin-marq-1" width="96" height="100"/></li>
     <li><img src="./images/garmin-marq-2.jpg" alt="garmin-marq-2" width="96" height="100"/></li>
@@ -150,7 +156,7 @@
     <div class="sale-main-img">
         <img src="./images/garmin-marq-5.jpg" alt="Main sale watch" width="328" height="398"/>
     </div>
-</div>
+
 
 <div class="sale-info">
     <h3 class="sale-item-title">MARQ® Commander (Gen 2) - Carbon Edition</h3>
@@ -171,24 +177,26 @@
             <li>Adventurer</li>
         </ul>
 </div>
+</div>
+</div>
 </section>
 <section class="reviews">
     <div class="reviews-container">
     <h2 class="reviews-title">Reviews</h2>
     <ul class="reviews-list">
-        <li>
+        <li class="reviews-item">
             <img src="./images/john-wax.jpg" alt="John Wax" width="56" height="56"/>
             <h3>John Wax</h3>
                 <p>Buying a watch from was the best choice for me. The design is perfectly combined with high quality materials. The strap
                 fits nicely on the hand, and the mechanism works flawlessly.</p>
         </li>
-        <li>
+        <li class="reviews-item">
             <img src="./images/victoria-romashenko.jpg" alt="Victoria Romashenko" width="56" height="56"/>
             <h3>Victoria Romashenko</h3>
             <p>Can't take my eyes off my watch from. Every time I put it on, it is admired by those around me. The build quality and
             attention to detail make it a real gem among my accessories.</p>
         </li>
-        <li>
+        <li class="reviews-item">
             <img src="./images/anastasia-trachuk.jpg" alt="Anastasia Trachuk" width="56" height="56"/>
             <h3>Anastasia Trachuk</h3>
             <p>My watch from is a real masterpiece. Every detail impresses with the high quality of execution. Special features like
@@ -201,6 +209,7 @@
 
 <section class="contact-us">
     <div class="contact-container">
+        <div class="contact-form-wrapper">
     <h2>Contact us</h2>
     <p>Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
     <form class="contact-form">
@@ -218,30 +227,38 @@
         </div>
         <button type="submit" class="form-button">Send</button>
     </form>
+    </div>
+    <div class="contact-img">
     <img src="./images/garmin-contact.jpg" alt="Diesel Master Chief" width="530" height="556">
+    </div>
+    
     </div>
 </section>
 </main>
 
-    <footer>
+    <footer class="footer">
 <div class="footer-container">
+    <div class="footer-top">
+    <div class="footer-brand">
     <a href="index.html" class="logo">watchcharm</a>
     <ul class="social-icons">
-        <li class="social-item"><a href="#" aria-label="Facebook"><svg class="icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
+        <li class="social-item"><a href="#" aria-label="Facebook"><svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons.svg/icons.svg#icon-facebook"></use>
                 </svg>
             </a></li>
-        <li class="social-item"><a href="#" aria-label="Instagram"><svg class="icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
+        <li class="social-item"><a href="#" aria-label="Instagram"><svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons.svg/icons.svg#icon-instagram"></use>
                 </svg></a></li>
-        <li class="social-item"><a href="#" aria-label="Youtube"><svg class="icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-youtube"></use>
+        <li class="social-item"><a href="#" aria-label="Youtube"><svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons.svg/icons.svg#icon-youtube"></use>
                 </svg></a></li>
     </ul>
+    </div>
     <p>Have the time of your life with our watches: where high-class craftsmanship meets impeccable design</p>
 <a href="tel:+380684439426" class="footer-phone">+380 (68) 443-94-26</a>
 </div>
-<div>
+<div class="footer-bottom">
+    <nav class="footer-nav">
     <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">About us</a></li>
@@ -250,13 +267,21 @@
         <li><a href="#">Reviews</a></li>
         <li><a href="#">Contact us</a></li>
     </ul>
-    <address class="address">
-        <ul class="address-list">
-            <li>1678 S. Pioneer Road Salt</li>
-            <li>Lake City UT 84104</li>
-        </ul>
+    </nav>
+    <address class="footer-address">
+        1678 S. Pioneer Road Salt <br> Lake City UT 84104
     </address>
+</div>
+<div class="footer-legal">
+    <p class="copyright">©2023 The Watch Spot. All rights reserved.</p>
+    <div class="legal-links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+</div>
 </div>
     </footer>
 </body>
 </html>
+
+
